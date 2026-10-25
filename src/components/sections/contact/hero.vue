@@ -1,7 +1,5 @@
 <script setup lang="ts">
     import heroImage from '@/assets/herobg.png'
-
-    import { Heart } from 'lucide-vue-next';
 </script>
 
 <template>

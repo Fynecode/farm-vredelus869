@@ -11,7 +11,7 @@
     import peppers from '@/assets/green_peppers.jpg'
     import watermelon from '@/assets/watermelon.jpg'
 
-    import { Sprout, ArrowRight } from 'lucide-vue-next';
+    import { ArrowRight } from 'lucide-vue-next';
     import { RouterLink } from 'vue-router';
 
     const crops = [
