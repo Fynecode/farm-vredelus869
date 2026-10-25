@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/farm-vredelus869/',
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
