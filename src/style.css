@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* Global defaults */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  /* Fonts */
+  --font-sans: 'Nunito Sans', sans-serif;
+  --font-heading: "Lora", serif;
+  --font-cursive: "Dancing Script", cursive;
+
+  /* Brand colors */
+  --color-farm-green: #234B32;
+  --color-farm-green-dark: #1a3826;
+  --color-farm-green-bright: #8CC63F;
+  --color-harvest-orange: #D97736;
+
+  /* Backgrounds */
+  --color-farm-paper: #F8F6EF;
+  --color-farm-white: #FFFFFF;
+
+  /* Text */
+  --color-farm-charcoal: #292B27;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-farm-paper);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
