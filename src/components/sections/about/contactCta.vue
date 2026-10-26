@@ -1,7 +1,7 @@
 
 <script setup lang="ts">
 import heroImage from '@/assets/leaves.jpg'
-import { Mail, ArrowRight } from 'lucide-vue-next'
+import { ArrowRight } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -20,11 +20,6 @@ import { Mail, ArrowRight } from 'lucide-vue-next'
             class="relative z-10 flex w-full flex-col gap-6 px-6 py-10 text-white sm:px-10 sm:py-12 lg:flex-row lg:items-center lg:gap-8 lg:px-20"
         >
             <div class="flex min-w-0 flex-1 items-start gap-4 sm:items-center sm:gap-5">
-                <Mail
-                    aria-hidden="true"
-                    class="mt-1 size-9 shrink-0 sm:mt-0 sm:size-12 lg:size-14"
-                    :stroke-width="1.5"
-                />
 
                 <header class="flex min-w-0 flex-col gap-2">
                     <p class="text-xs font-semibold tracking-[0.2em] text-farm-green-bright sm:text-sm">

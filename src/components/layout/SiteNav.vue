@@ -110,8 +110,8 @@ function closeMenu() {
                 hover:bg-farm-green/10 hover:text-farm-green
                 focus-visible:outline-2 focus-visible:outline-offset-2
                 focus-visible:outline-farm-green"
-          active-class="!bg-farm-green-dark !text-white"
-          exact-active-class="!bg-farm-green-dark !text-white"
+          active-class="!bg-farm-green-dark/20"
+          exact-active-class="!bg-farm-green-dark/20"
           @click="closeMenu"
         >
           {{ item.label }}

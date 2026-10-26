@@ -1,12 +1,10 @@
-
 <script setup lang="ts">
-import { Leaf, Sprout } from 'lucide-vue-next'
-import { UsersIcon, ShieldCheckIcon } from '@heroicons/vue/24/solid'
+import { UsersIcon, ShieldCheckIcon, StarIcon, ArrowPathIcon } from '@heroicons/vue/24/solid'
 import SectionLayout from '../layout/SectionLayout.vue'
 
 const cards = [
     {
-        icon: Sprout,
+        icon: StarIcon,
         title: 'Quality Produce',
         description: 'Fresh, healthy, and well cared for',
     },
@@ -21,7 +19,7 @@ const cards = [
         description: 'For a healthier tomorrow',
     },
     {
-        icon: Leaf,
+        icon: ArrowPathIcon,
         title: 'Sustainable Practices',
         description: 'Respecting the land and resources',
     },

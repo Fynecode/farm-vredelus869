@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import heroImage from '@/assets/herobg.png'
 import LinkButton from '@/components/common/Link-button.vue'
-import { ArrowRight } from 'lucide-vue-next'
+import { Tractor, Wheat } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import { ArrowRight } from 'lucide-vue-next'
             class="relative z-10 flex w-full flex-col gap-4 px-5 py-16 text-white sm:px-10 sm:py-20 lg:px-20"
         >
             <!-- Eyebrow labels -->
-            <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium tracking-wide sm:gap-x-4 sm:text-sm">
+            <div class="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium tracking-wide sm:gap-x-4 sm:text-sm">
                 <p>QUALITY PRODUCE</p>
                 <span class="size-1.5 shrink-0 rounded-full bg-white"></span>
                 <p>SUSTAINABLE FARMING</p>
@@ -35,7 +35,7 @@ import { ArrowRight } from 'lucide-vue-next'
             </h1>
 
             <h2
-                class="max-w-2xl font-heading text-lg font-semibold leading-snug text-white sm:text-xl lg:text-2xl"
+                class="hidden md:block max-w-2xl font-heading text-lg font-semibold leading-snug text-white sm:text-xl lg:text-2xl"
             >
                 Fresh produce and healthy livestock grown with purpose.
             </h2>
@@ -50,7 +50,7 @@ import { ArrowRight } from 'lucide-vue-next'
                 <LinkButton to="/products">
                     <template #default>
                         Our Products
-                        <ArrowRight class="ml-2 inline-block size-4" />
+                        <Wheat class="ml-2 inline-block size-4" />
                     </template>
                 </LinkButton>
 
@@ -59,7 +59,7 @@ import { ArrowRight } from 'lucide-vue-next'
                     class="inline-flex items-center justify-center rounded-full border border-white px-6 py-3 font-medium text-white transition hover:border-white/70 hover:bg-white/10"
                 >
                     About the farm
-                    <ArrowRight class="ml-2 inline-block size-4" />
+                    <Tractor class="ml-2 inline-block size-4" />
                 </RouterLink>
             </div>
         </div>
