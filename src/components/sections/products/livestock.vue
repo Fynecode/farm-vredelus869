@@ -15,19 +15,19 @@ const livestock = [
     {
         title: 'Cattle',
         description:
-            'Discover our cattle and enquire about current availability.',
+            'Healthy and well managed Santa Getrudis cattle that form a key part of our livestock operations',
         image: cattle,
     },
     {
         title: 'Goats',
         description:
-            'Learn more about our goats and ask about availability.',
+            'Strong and resilient Boer goats, raised with case and good management practices',
         image: goats,
     },
     {
         title: 'Chicken',
         description:
-            'Contact us to learn about our poultry and current availability.',
+            'Quality chickens, raised as part of our diverse livestock offering',
         image: chicken,
     },
 ]
@@ -46,9 +46,7 @@ const livestock = [
 
             <template #default>
                 <p class="max-w-xl leading-relaxed text-gray-600">
-                    Livestock is part of our farming operation. Get in touch
-                    to learn more about our animals and enquire about current
-                    availability.
+                    We raise cattle, goats, and chickens, contributing to the diversity of Farm Vredelus869's agricultural operations. Our livestock production focuses on grazing management, animal health, proper handling, and production planning to support the well-being of the animals and the farm's overall production.
                 </p>
             </template>
         </SectionHeader>
