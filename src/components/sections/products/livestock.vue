@@ -7,9 +7,9 @@ import ProductCard from '../../common/Product-card-full.vue'
 import { ArrowRight } from 'lucide-vue-next'
 import { RouterLink } from 'vue-router'
 
-import cattle from '@/assets/cabbage.jpg'
-import goats from '@/assets/cabbage.jpg'
-import chickens from '@/assets/cabbage.jpg'
+import cattle from '@/assets/cows2.jpg'
+import goats from '@/assets/goats2.jpg'
+import chicken from '@/assets/chickens.jpg'
 
 const livestock = [
     {
@@ -25,10 +25,10 @@ const livestock = [
         image: goats,
     },
     {
-        title: 'Chickens',
+        title: 'Chicken',
         description:
             'Contact us to learn about our poultry and current availability.',
-        image: chickens,
+        image: chicken,
     },
 ]
 </script>

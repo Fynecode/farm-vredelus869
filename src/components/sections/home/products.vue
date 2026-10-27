@@ -5,7 +5,6 @@ import ProductCard from '@/components/common/Product-card.vue'
 import SectionLayout from '@/components/layout/SectionLayout.vue'
 import LinkButton from '@/components/common/Link-button.vue'
 
-import cabbageImage from '@/assets/IMG-20261016-WA0001.jpg'
 import cabbage from '@/assets/cabbage.jpg'
 import spinach from '@/assets/Spinach.jpg'
 import potatoes from '@/assets/potatoes.jpg'
@@ -13,6 +12,9 @@ import tomatoes from '@/assets/tomatoes.jpg'
 import onion from '@/assets/onion.jpg'
 import peppers from '@/assets/green_peppers.jpg'
 import watermelon from '@/assets/watermelon.jpg'
+import cows from '@/assets/cows.jpg'
+import chickens from '@/assets/chickens.jpg'
+import goats from '@/assets/goats2.jpg'
 
 import { Sprout, Beef, ArrowRight } from 'lucide-vue-next'
 import { ref } from 'vue'
@@ -30,9 +32,9 @@ const crops = [
 ]
 
 const livestock = [
-    { title: 'Cattle', description: 'Healthy cattle raised on our farm.', image: cabbageImage },
-    { title: 'Goats', description: 'Goats raised as part of our livestock farming.', image: cabbageImage },
-    { title: 'Chickens', description: 'Chickens raised on our farm.', image: cabbageImage },
+    { title: 'Cattle', description: 'Healthy cattle raised on our farm.', image: cows },
+    { title: 'Goats', description: 'Goats raised as part of our livestock farming.', image: goats },
+    { title: 'Chickens', description: 'Chickens raised on our farm.', image: chickens },
 ]
 </script>
 
