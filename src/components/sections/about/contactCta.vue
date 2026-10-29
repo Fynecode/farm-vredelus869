@@ -3,7 +3,6 @@
 import heroImage from '@/assets/leaves.jpg'
 import { ArrowRight } from 'lucide-vue-next'
 </script>
-
 <template>
     <section
         class="relative flex items-center overflow-hidden border-b border-white bg-cover bg-center"
@@ -39,7 +38,7 @@ import { ArrowRight } from 'lucide-vue-next'
 
             <RouterLink
                 to="/contact"
-                class="inline-flex w-fit shrink-0 items-center justify-center rounded-full border border-white px-5 py-3 font-medium text-white transition-colors hover:bg-white hover:text-farm-green focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-6"
+                class="inline-flex w-fit shrink-0 items-center justify-center rounded-full border border-white px-5 py-3 font-medium text-white transition-colors hover:border-white/70 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-6"
             >
                 Contact us
                 <ArrowRight aria-hidden="true" class="ml-2 size-4" />
