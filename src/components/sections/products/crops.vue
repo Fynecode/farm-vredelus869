@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import SectionHeader from '../../common/Section-header.vue'
 import SectionLayout from '../../layout/SectionLayout.vue'
 import ProductCard from '../../common/Product-card-full.vue'

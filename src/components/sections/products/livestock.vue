@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 import SectionHeader from '../../common/Section-header.vue'
 import SectionLayout from '../../layout/SectionLayout.vue'

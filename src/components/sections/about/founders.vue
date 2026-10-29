@@ -47,7 +47,7 @@ import founderImage from '@/assets/founder.jpg'
                 </p>
 
                 <blockquote
-                    class="rounded-r border-l-4 border-farm-green bg-farm-green/5 px-4 py-3 text-sm italic sm:w-5/6 sm:text-base"
+                    class="rounded-l border-l-4 border-farm-green bg-farm-green/5 px-4 py-3 text-sm italic sm:w-5/6 sm:text-base"
                 >
                     “We believe in good food, healthy land and a stronger future
                     for our community.”
@@ -56,11 +56,11 @@ import founderImage from '@/assets/founder.jpg'
         </div>
 
         <!-- Founders' photograph -->
-        <div class="w-full">
+        <div class="w-full overflow-hidden rounded-lg">
             <img
                 :src="founderImage"
                 alt="John and Linea Shaetonhodi, founders of Farm Vredelus 869"
-                class="aspect-[4/3] w-full rounded-lg object-cover object-center sm:aspect-[5/4] md:aspect-[4/5] lg:aspect-[5/4]"
+                class="aspect-[4/3] w-full rounded-lg object-cover object-center transition-transform duration-600 ease-out hover:scale-105 motion-reduce:transition-none sm:aspect-[5/4] md:aspect-[4/5] lg:aspect-[5/4]"
                 loading="lazy"
             />
         </div>
