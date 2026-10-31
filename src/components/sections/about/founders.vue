@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 import SectionLayout from '../../layout/SectionLayout.vue'
 import SectionHeader from '../../common/Section-header.vue'
@@ -18,7 +17,7 @@ import founderImage from '@/assets/founder.jpg'
                 </template>
 
                 <template #subtitle>
-                    John and Linea Shaetonhodi
+                    John and Linnea Shaetonhodi
                 </template>
 
                 <template #default>
@@ -34,7 +33,7 @@ import founderImage from '@/assets/founder.jpg'
 
             <div class="flex flex-col gap-4 text-base leading-relaxed text-gray-700 sm:gap-6">
                 <p>
-                    John and Linea Shaetonhodi are the driving force behind
+                    John and Linnea Shaetonhodi are the driving force behind
                     Farm Vredelus 869. With a shared passion for agriculture
                     and a deep commitment to the land, they have built a farm
                     focused on quality, responsible farming, and long-term growth.
@@ -42,7 +41,7 @@ import founderImage from '@/assets/founder.jpg'
 
                 <p>
                     John brings hands-on farming experience and a strong
-                    understanding of the land, while Linea contributes business
+                    understanding of the land, while Linnea contributes business
                     insights and a focus on people, customers, and community development.
                 </p>
 
@@ -59,8 +58,8 @@ import founderImage from '@/assets/founder.jpg'
         <div class="w-full overflow-hidden rounded-lg">
             <img
                 :src="founderImage"
-                alt="John and Linea Shaetonhodi, founders of Farm Vredelus 869"
-                class="aspect-[4/3] w-full rounded-lg object-cover object-center transition-transform duration-600 ease-out hover:scale-105 motion-reduce:transition-none sm:aspect-[5/4] md:aspect-[4/5] lg:aspect-[5/4]"
+                alt="John and Linnea Shaetonhodi, founders of Farm Vredelus 869"
+                class="aspect-4/3 w-full rounded-lg object-cover object-center transition-transform duration-600 ease-out hover:scale-105 motion-reduce:transition-none sm:aspect-5/4 md:aspect-4/5 lg:aspect-5/4"
                 loading="lazy"
             />
         </div>

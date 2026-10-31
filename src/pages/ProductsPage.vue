@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { usePageMetadata } from '@/composables/usePageMetadata'
 import SiteNav from '@/components/layout/SiteNav.vue'
 import HeroSection from '@/components/sections/products/hero.vue'
 import CropsSection from '../components/sections/products/crops.vue';
@@ -8,6 +9,11 @@ import whyUs from '../components/sections/whyUs.vue';
 import SiteFooter from '../components/layout/SiteFooter.vue';
 
 import { MessagesSquare, ArrowRight } from 'lucide-vue-next';
+
+usePageMetadata(
+    'Crops & Livestock | Farm Vredelus 869, Oshikoto',
+    'Explore fresh vegetables, cattle, Boer goats, and chickens raised at Farm Vredelus 869 in the Oshikoto Region of Namibia.',
+)
 </script>
 
 <template>

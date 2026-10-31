@@ -20,7 +20,7 @@
                 <span>Quality <span class="text-green-600">crops,</span></span> <span>and healthy <span class="text-harvest-orange">livestock</span></span> 
             </h1>
             <p class="text-lg text-gray-300 max-w-2xl">
-                We grow a veriety of vegetables and rais livestock, providing nutritious produce for our local community.
+                We grow a variety of vegetables and raise livestock, providing nutritious produce for our local community.
             </p>
         </div>
     </section>

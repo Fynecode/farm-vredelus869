@@ -1,22 +1,36 @@
 
 <script setup lang="ts">
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import heroImage from '@/assets/herobg.png'
 import LinkButton from '@/components/common/Link-button.vue'
 import { Tractor, Wheat } from 'lucide-vue-next'
+
+const showHeroContent = ref(false)
+let revealTimer: ReturnType<typeof setTimeout>
+
+onMounted(() => {
+    revealTimer = setTimeout(() => {
+        showHeroContent.value = true
+    }, 1000)
+})
+
+onBeforeUnmount(() => clearTimeout(revealTimer))
 </script>
 
 <template>
     <section
+        v-auto-animate
         class="relative flex min-h-[75vh] items-center bg-cover bg-center sm:min-h-[80vh] lg:min-h-[80vh]"
         :style="{ backgroundImage: `url(${heroImage})` }"
     >
         <!-- Gradient overlay -->
         <div
-            class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/20 sm:to-transparent"
+            class="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/20 sm:to-transparent"
         ></div>
 
         <!-- Hero content -->
         <div
+            v-if="showHeroContent"
             class="relative z-10 flex w-full flex-col gap-4 px-5 py-16 text-white sm:px-10 sm:py-20 lg:px-20"
         >
             <!-- Eyebrow labels -->
