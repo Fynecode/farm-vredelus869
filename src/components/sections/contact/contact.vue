@@ -30,7 +30,7 @@ import { PaperAirplaneIcon } from '@heroicons/vue/24/outline'
                 <span class="flex min-w-0 flex-col gap-1">
                     <span class="font-heading text-lg sm:text-xl">Phone</span>
                     <span class="break-words text-sm text-gray-600 sm:text-base">
-                        +264 81 111 1111
+                        +264 81 378 3172
                     </span>
                 </span>
             </a>
