@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import cabbageImage from '@/assets/IMG-20261016-WA0001.jpg'
+const cabbageImage = 'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793562183/w1ezx2etzripn4jbhizb.jpg'
 
 import SectionHeader from '@/components/common/Section-header.vue'
 import LinkButton from '@/components/common/Link-button.vue'

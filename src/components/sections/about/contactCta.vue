@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import heroImage from '@/assets/leaves.jpg'
+const heroImage = 'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793558036/lvf3aebik1nbdfbct5en.jpg'
 import { ArrowRight } from 'lucide-vue-next'
 </script>
 <template>

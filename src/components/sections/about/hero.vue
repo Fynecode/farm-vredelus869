@@ -1,6 +1,5 @@
-
 <script setup lang="ts">
-import heroImage from '@/assets/herobg.png'
+ const heroImage = 'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793536204/rh4ei2sxhpxh7b1fqsek.png'
 </script>
 
 <template>

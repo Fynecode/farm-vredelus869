@@ -7,7 +7,6 @@ import {
     MapPinIcon,
 } from '@heroicons/vue/24/solid'
 import { PaperAirplaneIcon } from '@heroicons/vue/24/outline'
-import { Sprout } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -70,14 +69,10 @@ import { Sprout } from 'lucide-vue-next'
                 </span>
             </a>
 
-            <div class="mt-2 border-b border-dashed border-gray-300"></div>
+            <div class=" border-b border-dashed border-gray-300"></div>
 
             <!-- Decorative tagline -->
-            <div class="mt-4 flex flex-wrap items-center justify-center gap-4 py-2 sm:mt-6 sm:gap-6 md:mt-auto lg:pt-10">
-                <Sprout
-                    aria-hidden="true"
-                    class="size-12 shrink-0 sm:size-16"
-                />
+            <div class=" flex flex-wrap items-center justify-center gap-4 py-2 sm:mt-6 sm:gap-6 md:mt-auto lg:pt-10">
 
                 <p class="flex -rotate-6 flex-col font-cursive text-3xl italic text-farm-green sm:text-4xl">
                     Quality produce.

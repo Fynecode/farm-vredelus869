@@ -1,18 +1,10 @@
-
 <script setup lang="ts">
 import { ref } from 'vue'
 import SectionHeader from '../../common/Section-header.vue'
 import SectionLayout from '../../layout/SectionLayout.vue'
 import ProductCard from '../../common/Product-card-full.vue'
 
-import cabbage from '@/assets/cabbage.jpg'
-import spinach from '@/assets/Spinach.jpg'
-import potatoes from '@/assets/potatoes.jpg'
-import tomatoes from '@/assets/tomatoes.jpg'
-import onion from '@/assets/onion.jpg'
-import peppers from '@/assets/green_peppers.jpg'
-import watermelon from '@/assets/watermelon.jpg'
-import cabbage2 from '@/assets/IMG-20261016-WA0004.jpg'
+const truck = 'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793534417/dpffzkicqcv9p5e8sp5q.jpg'
 
 import {
   ArrowRight,
@@ -27,25 +19,41 @@ const crops = [
       title: 'Cabbage',
       variety: 'Star 3301 & Megastar f1',
       description: 'Fresh, high-quality cabbage grown with care.',
-      image: cabbage,
+      images: 
+      [
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793530050/xk1tmkhyefjdr2cxcjz4.jpg', 
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793530038/x3g6dosj65d5il7m1vus.jpg',
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793529937/gtkuqpm2zijojpllypuu.jpg'
+      ],
     },
     {
       title: 'Spinach',
       variety: 'Swish chard',
       description: 'Nutritious and fresh from our field.',
-      image: spinach,
+      images: 
+      [
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793531834/wbkc4q28r6w4efo9xb9e.jpg',
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793531833/ezoudvo38c1zllvhc0bb.jpg'
+      ],
     },
     {
       title: 'Onions',
       variety: 'SG8378',
       description: 'Strong and reliable harvests.',
-      image: onion,
+      images: 
+      [
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793534117/qcf2ak7rz67tlnhrwoav.jpg',
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793534006/z3fdisnnnfmqvntwqsbd.png'
+      ],
     },
     {
       title: 'Potatoes',
       variety: 'Mondial',
       description: 'Good quality potatoes for everyday use.',
-      image: potatoes,
+      images: 
+      [
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793532090/k5afo8c83uunfkoftgtc.jpg'
+      ],
     },
   ],
   [
@@ -53,19 +61,31 @@ const crops = [
       title: 'Tomatoes',
       variety: 'Zara',
       description: 'Fresh and full of flavour.',
-      image: tomatoes,
+      images: 
+      [
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793532592/cihat5exaveug6vtrvax.jpg', 
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793532616/ruppx4w6d43ff7enlqai.jpg'
+      ],
     },
     {
       title: 'Green Peppers',
       variety: 'Double up f1',
       description: 'Crisp and full of taste.',
-      image: peppers,
+      images: 
+      [
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793532386/enucckatzcytkowiagr1.jpg',
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793532330/nc8nfaln0tneldqviptt.jpg'
+      ],
     },
     {
-      title: 'Watermelon',
+      title: 'Watermelon',                                                                                         
       variety: 'Crimson sweet',
       description: 'Sweet, refreshing, and locally grown.',
-      image: watermelon,
+      images: 
+      [
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793532832/xgdups8rzlgnfxmizo9t.jpg', 
+        'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793532850/vrr4m4onswfehmz4imfk.jpg'
+      ],
     },
   ],
 ]
@@ -91,7 +111,7 @@ const prevPage = () => {
   <SectionLayout>
     <section class="space-y-8 sm:space-y-10">
       <!-- Section introduction -->
-      <div class="grid grid-cols-1 items-center gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-10">
+      <div class="grid grid-cols-1 items-center lg:items-start gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-10">
         <SectionHeader>
           <template #title>Our crops</template>
           <template #subtitle>Fresh crops from our fields</template>
@@ -105,7 +125,7 @@ const prevPage = () => {
         </SectionHeader>
 
         <img
-          :src="cabbage2"
+          :src="truck"
           alt="Cabbage growing at Farm Vredelus"
           class="h-52 w-full rounded-lg object-cover sm:h-64 lg:h-72"
         />
@@ -141,17 +161,10 @@ const prevPage = () => {
             <ProductCard
             v-for="item in page"
             :key="item.title"
+            :images="item.images"
+            :image-alt="item.title"
             class="h-full transition-transform duration-300 hover:-translate-y-1"
             >
-            <template #image>
-                <img
-                :src="item.image"
-                :alt="item.title"
-                loading="lazy"
-                class="h-44 w-full rounded-t-lg object-cover sm:h-48"
-                />
-            </template>
-
             <template #title>{{ item.title }}</template>
             <template #variety>{{ item.variety }}</template>
             <template #description>{{ item.description }}</template>

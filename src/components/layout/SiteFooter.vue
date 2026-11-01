@@ -8,8 +8,6 @@ import {
     PhoneIcon,
     EnvelopeIcon,
 } from '@heroicons/vue/24/solid'
-
-import { Facebook, Instagram } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -96,25 +94,12 @@ import { Facebook, Instagram } from 'lucide-vue-next'
 
             <!-- Social media -->
             <div class="flex flex-col gap-4 sm:border-l sm:border-white/30 sm:pl-6 lg:pl-5">
-                <h4 class="font-heading text-xl">Follow our journey</h4>
 
-                <div class="flex items-center gap-3">
-                    <!-- Replace # with the farm's real social profile URLs -->
-                    <a
-                        href="#"
-                        aria-label="Facebook"
-                        class="rounded-full border border-white/30 p-3 transition hover:bg-white/10"
-                    >
-                        <Facebook class="size-5" />
-                    </a>
-
-                    <a
-                        href="#"
-                        aria-label="Instagram"
-                        class="rounded-full border border-white/30 p-3 transition hover:bg-white/10"
-                    >
-                        <Instagram class="size-5" />
-                    </a>
+                <div class="flex items-center justify-center gap-3">
+                    <p class="flex -rotate-6 flex-col font-cursive text-3xl italic text-white sm:text-4xl">
+                        Quality produce.
+                        <span>Local roots</span>
+                    </p>
                 </div>
             </div>
         </div>

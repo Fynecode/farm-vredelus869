@@ -3,7 +3,7 @@
 import SectionLayout from '@/components/layout/SectionLayout.vue'
 import SectionHeader from '../../common/Section-header.vue'
 
-import rImage from '@/assets/founders.jpg'
+const rImage = 'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793547417/lvh0z9tviknkijsbpet3.jpg'
 import { Leaf, Sprout, Users } from 'lucide-vue-next'
 
 const commitments = [

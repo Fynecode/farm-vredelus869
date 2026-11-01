@@ -1,25 +1,12 @@
 
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from 'vue'
-import heroImage from '@/assets/herobg.png'
+const heroImage = 'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793536204/rh4ei2sxhpxh7b1fqsek.png'
 import LinkButton from '@/components/common/Link-button.vue'
 import { Tractor, Wheat } from 'lucide-vue-next'
-
-const showHeroContent = ref(false)
-let revealTimer: ReturnType<typeof setTimeout>
-
-onMounted(() => {
-    revealTimer = setTimeout(() => {
-        showHeroContent.value = true
-    }, 1000)
-})
-
-onBeforeUnmount(() => clearTimeout(revealTimer))
 </script>
 
 <template>
     <section
-        v-auto-animate
         class="relative flex min-h-[75vh] items-center bg-cover bg-center sm:min-h-[80vh] lg:min-h-[80vh]"
         :style="{ backgroundImage: `url(${heroImage})` }"
     >
@@ -30,8 +17,7 @@ onBeforeUnmount(() => clearTimeout(revealTimer))
 
         <!-- Hero content -->
         <div
-            v-if="showHeroContent"
-            class="relative z-10 flex w-full flex-col gap-4 px-5 py-16 text-white sm:px-10 sm:py-20 lg:px-20"
+            class="hero-content relative z-10 flex w-full flex-col gap-4 px-5 py-16 text-white sm:px-10 sm:py-20 lg:px-20"
         >
             <!-- Eyebrow labels -->
             <div class="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium tracking-wide sm:gap-x-4 sm:text-sm">
@@ -79,3 +65,27 @@ onBeforeUnmount(() => clearTimeout(revealTimer))
         </div>
     </section>
 </template>
+
+<style scoped>
+.hero-content {
+    animation: hero-content-enter 700ms ease-out 1s both;
+}
+
+@keyframes hero-content-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-content {
+        animation: none;
+    }
+}
+</style>

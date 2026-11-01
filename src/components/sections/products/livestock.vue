@@ -6,28 +6,24 @@ import ProductCard from '../../common/Product-card-full.vue'
 import { ArrowRight } from 'lucide-vue-next'
 import { RouterLink } from 'vue-router'
 
-import cattle from '@/assets/cows2.jpg'
-import goats from '@/assets/goats2.jpg'
-import chicken from '@/assets/chickens.jpg'
-
 const livestock = [
     {
         title: 'Cattle',
         description:
             'Healthy and well managed Santa Getrudis cattle that form a key part of our livestock operations',
-        image: cattle,
+        images: ['https://res.cloudinary.com/dwrzunbwv/image/upload/v1793535610/jsh3ee8l3vfcrfyfaqky.png'],
     },
     {
         title: 'Goats',
         description:
             'Strong and resilient Boer goats, raised with case and good management practices',
-        image: goats,
+        images: ['https://res.cloudinary.com/dwrzunbwv/image/upload/v1793536058/y9cwfc0mzxlfscac789q.png'],
     },
     {
         title: 'Chicken',
         description:
             'Quality chickens, raised as part of our diverse livestock offering',
-        image: chicken,
+        images: ['https://res.cloudinary.com/dwrzunbwv/image/upload/v1793536025/wi4athxusyvhjfeygeul.jpg'],
     },
 ]
 </script>
@@ -54,17 +50,10 @@ const livestock = [
             <ProductCard
                 v-for="animal in livestock"
                 :key="animal.title"
+                :images="animal.images"
+                :image-alt="animal.title"
                 class="transition-transform duration-300 hover:-translate-y-1"
             >
-                <template #image>
-                    <img
-                        :src="animal.image"
-                        :alt="animal.title"
-                        class="aspect-[4/3] w-full rounded-t-lg object-cover object-center"
-                        loading="lazy"
-                    />
-                </template>
-
                 <template #title>
                     {{ animal.title }}
                 </template>

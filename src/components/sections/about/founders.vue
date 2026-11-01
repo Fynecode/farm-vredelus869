@@ -2,12 +2,12 @@
 import SectionLayout from '../../layout/SectionLayout.vue'
 import SectionHeader from '../../common/Section-header.vue'
 
-import founderImage from '@/assets/founder.jpg'
+const founderImage = 'https://res.cloudinary.com/dwrzunbwv/image/upload/v1793538622/rspnwtjhcttnsbvpda2v.jpg'
 </script>
 
 <template>
     <SectionLayout
-        class="grid grid-cols-1 items-center gap-8 text-farm-green md:grid-cols-2 md:gap-10 lg:gap-16"
+        class="grid grid-cols-1 gap-8 text-farm-green md:grid-cols-2 md:gap-10 lg:gap-16"
     >
         <!-- Founders' story -->
         <div class="flex min-w-0 flex-col gap-6 sm:gap-8">
@@ -56,12 +56,12 @@ import founderImage from '@/assets/founder.jpg'
 
         <!-- Founders' photograph -->
         <div class="w-full overflow-hidden rounded-lg">
-            <img
-                :src="founderImage"
-                alt="John and Linnea Shaetonhodi, founders of Farm Vredelus 869"
-                class="aspect-4/3 w-full rounded-lg object-cover object-center transition-transform duration-600 ease-out hover:scale-105 motion-reduce:transition-none sm:aspect-5/4 md:aspect-4/5 lg:aspect-5/4"
-                loading="lazy"
-            />
-        </div>
+    <img
+        :src="founderImage"
+        alt="John and Linnea Shaetonhodi, founders of Farm Vredelus 869"
+        class="aspect-[7/8] rounded-lg object-contain transition-transform duration-500 ease-out hover:scale-[1.02] motion-reduce:transition-none"
+        loading="lazy"
+    />
+</div>
     </SectionLayout>
 </template>
