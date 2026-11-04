@@ -34,9 +34,24 @@ import { PaperAirplaneIcon } from '@heroicons/vue/24/outline'
                     </span>
                 </span>
             </a>
+            <a
+                href="tel:+264812831357"
+                class="group flex min-w-0 items-center gap-4 rounded-lg"
+            >
+                <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-farm-green/10 transition-colors group-hover:bg-farm-green/15 sm:size-14">
+                    <PhoneIcon class="size-5 sm:size-6" />
+                </span>
+
+                <span class="flex min-w-0 flex-col gap-1">
+                    <span class="font-heading text-lg sm:text-xl">Phone</span>
+                    <span class="break-words text-sm text-gray-600 sm:text-base">
+                        +264 81 283 1357
+                    </span>
+                </span>
+            </a>
 
             <a
-                href="mailto:info@farmvredelus869.com"
+                href="mailto:farmvredelus869.contact@gmail.com"
                 class="group flex min-w-0 items-center gap-4 rounded-lg"
             >
                 <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-farm-green/10 transition-colors group-hover:bg-farm-green/15 sm:size-14">
@@ -46,7 +61,7 @@ import { PaperAirplaneIcon } from '@heroicons/vue/24/outline'
                 <span class="flex min-w-0 flex-col gap-1">
                     <span class="font-heading text-lg sm:text-xl">Email</span>
                     <span class="break-all text-sm text-gray-600 sm:text-base">
-                        info@farmvredelus869.com
+                        farmvredelus869.contact@gmail.com
                     </span>
                 </span>
             </a>
