@@ -66,10 +66,10 @@ import {
                 <div class="flex items-start gap-3">
                     <EnvelopeIcon class="mt-0.5 size-5 shrink-0" />
                     <a
-                        href="mailto:info@farmvredelus869.com"
+                        href="mailto:farmvredelus869.contact@gmail.com"
                         class="break-all text-sm text-gray-200 transition hover:text-white"
                     >
-                        info@farmvredelus869.com
+                        farmvredelus869.contact@gmail.com
                     </a>
                 </div>
             </div>
