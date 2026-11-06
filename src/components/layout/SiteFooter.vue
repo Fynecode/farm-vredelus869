@@ -61,6 +61,27 @@ import {
                         +264 81 378 3172
                         <span class="block text-xs text-gray-300">Crop manager</span>
                     </a>
+                    <a
+                        href="tel:+264812831357"
+                        class="break-words text-sm text-gray-200 transition hover:text-white"
+                    >
+                        +264 81 283 1357
+                        <span class="block text-xs text-gray-300">Sales</span>
+                    </a>
+                    <a
+                        href="tel:+264811240646"
+                        class="break-words text-sm text-gray-200 transition hover:text-white"
+                    >
+                        +264 81 124 0646
+                        <span class="block text-xs text-gray-300">Mrs Linnea Shaetonhodi (Proprietor)</span>
+                    </a>
+                    <a
+                        href="tel:+264811245586"
+                        class="break-words text-sm text-gray-200 transition hover:text-white"
+                    >
+                        +264 81 124 5586
+                        <span class="block text-xs text-gray-300">John M Shaetonhodi (Proprietor)</span>
+                    </a>
                 </div>
 
                 <div class="flex items-start gap-3">
