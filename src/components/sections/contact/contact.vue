@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 import { ref } from 'vue'
 import SectionLayout from '../../layout/SectionLayout.vue'
@@ -9,7 +8,7 @@ import {
 } from '@heroicons/vue/24/solid'
 import { PaperAirplaneIcon } from '@heroicons/vue/24/outline'
 
-const CONTACT_API_URL = ''
+const CONTACT_API_URL = 'https://stansia-email-api.onrender.com/api/email'
 const FARM_EMAIL = 'farmvredelus869.contact@gmail.com'
 
 type ContactFormData = {
@@ -28,7 +27,7 @@ async function sendContactForm(data: ContactFormData) {
 
     const response = await fetch(CONTACT_API_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'x-api-key': 'stansia-production-key-123' },
         body: JSON.stringify(data),
     })
 
@@ -45,7 +44,7 @@ async function handleSubmit(event: SubmitEvent) {
 
     const name = String(formData.get('name') ?? '')
     const phone = String(formData.get('phone') ?? '')
-    const email = String(formData.get('from') ?? '')
+    const email = String(formData.get('email') ?? '')
     const subject = String(formData.get('subject') ?? '')
     const message = String(formData.get('message') ?? '')
 
@@ -55,16 +54,12 @@ async function handleSubmit(event: SubmitEvent) {
     to: FARM_EMAIL,
     subject,
     body: `
-New website enquiry
-
-Name: ${name}
-Sender email: ${email}
-Phone: ${phone}
-
-Message:
-${message}
-    `.trim(),
-})
+    Name: ${name}
+    Sender email: ${email}
+    Phone: ${phone}
+    Message: ${message}
+        `.trim(),
+    })
 
         form.reset()
         formStatus.value = 'success'
@@ -238,7 +233,7 @@ ${message}
                     </label>
                     <input
                         id="email"
-                        name="from"
+                        name="email"
                         type="email"
                         placeholder="Enter your email address"
                         autocomplete="email"
