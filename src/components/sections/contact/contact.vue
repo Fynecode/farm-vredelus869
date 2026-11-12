@@ -50,7 +50,7 @@ async function handleSubmit(event: SubmitEvent) {
 
     try {
         await sendContactForm({
-    from: 'Farm Vredelus Website <website@farmvredelus869.com>',
+    from: 'website@farmvredelus869.com',
     to: FARM_EMAIL,
     subject,
     body: `
